@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>needlinux-demo</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4">
+    <meta name="author" content="naem azam at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/needlinux.png" alt="logo"><span class="logo-text">Need<span class="text-alt">Linux</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>    
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linux fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-ubuntu fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="menu.html" class="btn btn-primary d-none d-lg-flex">Menu</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fab fa-ubuntu"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is Arch Based Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">BlackArch Linux</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">BlackArch Linux Features</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Why I Should Use BlackArch?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Which Image Should I Download?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Which Desktop Environment and (Meta)Packages </a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">USB Boot</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">VMware Boot </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Install</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Leran Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">BlackArch Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-terminal"></i></span>Top Used Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Some Common Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">BlackArch Configaration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Troubleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Installation Failure</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Developements</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Developements </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">How to develop </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt"></i></span>Top Uses</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Penetration Testing</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Bug Bounty</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Websites </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Books</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Discuss Blackarch</a></li>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				<header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-06-01</span></h1>
+	  <p>BlackArch is designed specifically for penetration testing or, more colloquially, "pen testing". This involves using various tools to access a system by exploiting security holes. "Pen testing", like the term "hacking", is often misunderstood to mean criminals trying to access unauthorized information. But competent system and network administrators routinely carry out pen tests on their own systems to ensure they are safe to use, either by using a distribution like BlackArch or by authorizing a security professional to do the same. BlackArch also contains tools that go beyond simple pen-testing, including some to thwart forensic analysis or to exploit compromised systems. The distribution was initially created for the developers' own use but now is available to the public.</p>
+<img class="logo-icon mr-2" src="BlackArch_Linux-Log_in-UI_20200111.png"> </img>
+<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">What is Arch Based Linux?</h2>
+						<p>Firstly, we should know about Arch based Linux system before knowing about BlackArch Linux.  
+I have always found Arch Linux as a DIY (Do It Yourself) operating system. From installing to managing, Arch Linux lets you handle everything. 
+						Arch Linux is basically a lightweight rolling release Linux distribution for x86-64 architecture-based computers. 
+						Arch Linux uses a rolling release model, meaning there are no "major releases" of completely new versions of the system;  
+						a regular system update is all that is needed to obtain the latest Arch software;  
+						the installation images released every month by the Arch team are simply up-to-date snapshots of the main system components. Everything is fresh and cutting edge in the rolling release model. 
+						You don’t have to upgrade operating system from one version to another.  
+						Just use the pacman command( $pacman -Syu) and you always have the latest version. 
+						It is open-source and contains both libre and proprietary software because of its flexibility-based philosophy. 
+						It is focused on simplicity, modernity, pragmatism, user centrality, and versatility. 
+						In practice, this means the project attempts to have minimal distribution-specific changes, and therefore minimal breakage with updates, 
+						and be pragmatic over ideological design choices and focus on customizability rather than user-friendliness. </p>
+						<p>Some popular Linux distributions based on Arch:
+
+<li>Manjaro Linux</li>
+<li>ArcoLinux</li>
+<li>EndeavourOS</li>
+<li>RebornOS</li>
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">What is BlackArch Linux?</h2>
+						<p>The BlackArch is an Arch Linux based, open-source penetration testing distribution tool.
+						It is used by the peoples and officials interested in cyber security and penetration testing that provides a large number of cyber security tools. 
+						The distribution is very famous among security researchers and penetrations testers.
+						The repository contains more than 2700 tools. You can install tools individually or in groups.
+						BlackArch Linux distribution is compatible with current installs of Arch Linux and provides a very efficient and powerful environment one can possibly imagine off.				
+
+</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">BlackArch Linux Features</h2>
+						<p>BlackArch is a penetration testing distribution based in Arch Linux that provides a large amount of cyber security suits. It is an open-source distro created specially for penetration testers and security researchers.
+						Here are some of the BlackArch features :  
+						<li>A live ISO with multiple window managers.</li>
+						<li>Support for multiple architectures.</li>
+						<li>An installer with the ability to build from source.</li>
+						<li> More than 2700 tools.</li>
+						<li>Install package individually or in groups.</li>
+						<li> BlackArch is designed for the professional in mind.</li>
+						<li> Doesn't need a GPU to run but requires one for it's 
+						      GPU attacks.</li>
+						<li>Its very minimalistic</li>
+						
+						</p>
+					</section>
+					
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Why I Should Use BlackArch?</h2>
+						<p>BlackArch is a Linux pentesting distribution based on ArchLinux.
+						If you're not familiar with ArchLinux, or Linux in general,I strongly suggest you to avoid BlackArch due to the learning curve for new users.
+						This distro is good for them who totally know what they are doing, what they have to do and what being done . Its specially developed for Hacking or Penetration Testing .If you are into cyber security or you want to learn, should go with this OS.
+						Its not about the disk space of your computer  but its about the requirements.BlackArch is little bit complex for beginners because its not as simple as Kali and parrot though they contain same tools with different working environments at same time. 
+                         You must have good knowledge about Linux to use BlackArch .Its True it contains more tools than Kali and Parot OS.BlackArch is so simple and minimal and its has it own benefits.If you like simplicity and want to perform only one task in your distro or you have less configured pc then blackarch is good for you.
+						 <p>But If you have No knowledge about Linux and you want a Linux distro for your daily task done i would suggest Ubuntu. In another case if you want to learn Linux System from sratch i would suggest Redhat.</p>
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Which ISO Image Should I Download?</h2>
+						<p>The Official BlackArch Linux page contains full, slim and netinstall ISO images. You can burn these images to DVDs and flashdrives
+The full ISO contains a complete, functional BlackArch Linux system with all the available tools in the repo at build time. 
+The slim ISO contains a functional BlackArch Linux system with a selected set of common/well-known tools and system utilities for pentesting.
+The netinstall ISO is a lightweight image for bootstrapping machines with a minimal set of packages.
+If possible, please try to use a mirror near you to download the ISOs. You can find a list of mirrors below of official blackarch site.<p>
+<h5>Full ISO</h5>
+<p>If you want to boot by usb offline you should download full ISO for oflline installion or Virual Machine installation. Make sure to choose the right ISO. 
+Check if your hardware supports virtualization. If so enable it in your UEFI/BIOS settings. If not, you must use the 32 bit ISO.
+ Qemu with KVM was successfully tested and can be used instead of VirtualBox</p>		
+ <h5>Slim ISO</h5>
+ <p>You can install BlackArch Linux using the Slim medium which features GUI installer. Just double click on the Install BlackArch icon on the desktop. Follow the instructions on the GUI installer.</p>
+ <h5>OVA Images</h5>
+ 
+ <p>The OVA is just a prepackaged image for convenience - its not going to be any different than the ISO installed on a virtual machine. Its literally just a "image" of a running machine, but without a UID etc.
+All packages are maintained and receive security updates.You need a virtual machine for import the OVA image .
+</p>
+
+
+
+			</section>
+					
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">Which Desktop Environment and (Meta)Packages to Choose During Installation:</h2>
+						<p> BlackArch Linux is an Arch Linux-based distribution for penetration testers and security researchers. 
+						In the list of top 5 Linux distros for hacking it will be a very difficult situation for … All graphical applications, including your desktop environment, are built on top of Xorg. 
+						Just like LXDE & MATE, XFCE Desktop Environment is one of the lightweight desktop environments out there. 
+						LightDM — Cross-desktop display manager, can use various front-ends written in any toolkit. So, install the bundle, and Arch will set it all up. 
+						I also suggest enabling Network … They use their own repositories and wait a little bit longer to update packages, so they are not so bleeding edge as Arch, but still way more up to date than Ubuntu. 
+						The non-free option will load the proprietary N… Is possible we make arch linux looks like Blackarch like when we right click and it does show all the tools. You now have to setup the partitions. Select Linux swap, solaris and press enter.
+						You will have the choice to download the VirtualBox guest additions/packages, if you are not interested, press n and hit enter. When you confirm the password, the root partition will immediately be encrypted. 
+						BlackArch The repository is ever-growing. You now have to select the keymap you want. 
+						Some desktop environments may also support Wayland as an alternative to X. 
+						BlackArch is similar in usage to both Parrot OS and Kali Linux when fully installed.</p>
+					</section>
+	
+				    <!--//section-->
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+						    <p>This tutorial will show you how to install BlackArch Linux using ISO and blackarch-installer. VMware Workstation is used in this tutorial, but if you prefer other virtualization software you can also use them.
+We assume that you have finished burning on USB or DVD and you are ready to install ,if your are not then look at down for USB boot.
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">USB Boot</h2>
+						<p>Make a bootable USB for BlackArch Linux is very simple.You need a 32GB usb drive, its perfect enough.Then you need a Live ISO image. You will find Live ISO image as named Full ISO Image on BlackArchs official website. Now you need a efficient image burning tool.I would suggest " balenaEtcher " here. It is a hassle-free solution that allows you to burn your chosen OS to an SD card and other removable hard-drives without any complications. It is a handy tool to have if you want to save a boot image in a flash.Its very simple to do .Go to balenaEtcher website download the tools and run it then select your iso file from storage and then select your connected USB flash drive on balenaEtcher and then click on Flash .You will ready to go after burning the ISO image to your USB Flash drive . 
+					<p><img src="BalenaEtcher_v1.5.97.png"  > <br /></p>
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">VMware Boot</h2>
+						<p>Go to the Blackarch official download page, there you will find various download options.There you need to download the Full ISO(Live ISO) file. 
+						Always try to dowload the ISO file from official website , so you can be sure that you are not downloading any malicious files. Then you need to download the VMware Workstation  for 32 or 64 bit bit according to your pc configuration .
+						<img src="Screenshot from 2021-07-29 19-24-48.png"  > <br />
+						</p>
+						
+				
+						<h3>Download VMware Workstation </h3>
+						<img src="vmware.png"  > <br />
+						
+						<h3>Now folow the steps below:</h3><br />
+						<p>Step 1: After downloading VMware you need to install and open it .The interface should be look like this.  </p>
+						<p><img src="linux1.png"  > <br /></p>
+						<p>Step 2: Click on "creat a new virtual machine".Then choose  "I will install the operating system later" and click next.</p>
+						<p><img src="linux2.png"  > <br /></p>
+						<p>step3: Select Guest Operating System as Linux .After that choose version "Other Linux 5.x and later kernel 64-bit".Then Click Next .</p>
+						<p><img src="linux3.png"  > <br /></p>
+						<p>Step 4: Now you need to named your Virtual Machine , you can choose any name you like .Choose a location where you want to store your Blackarch Installation.Then Click Next</p>
+						<p><img src="linux4.png"  > <br /></p>
+						<p>Step 5: Choose your disk size .I choose 90GB here because the OS sytem itself took 50-55GB for installation.select "Store virtual disk as a single file ".</p>
+						<p><img src="linux5.png"  > <br /></p>	
+						<p>Step 6:Now click on Customize Hardware . </p>
+							<p><img src="linux6.png"  > <br /></p>
+							<p>Step 7:Choose your Memory(RAM)  at  Least 1GB.I choose 2GB here for better performance. </p>
+							<p><img src="linux7.png"  > <br /></p>
+							<p>Step 8:Now jump to New CD/DVD  there you have to select "Use ISO Image".There you have browse your storage and select the iso file you have downloaded before. </p>
+							<p><img src="linux8.png"  > <br /></p>
+							<p>Step 9:Close the customization and hit to "Finish".</p>
+							<p><img src="linux9.png"  > <br /></p>
+							<p>Step 10:Now you are ready to go.Click on "Power On"</p>
+							<p><img src="linux10.png"  > <br /></p>
+							<p><img src="linux11.png"  > <br /></p>
+							<p>Step 11:Here you go .Log in as a Root user.Input "root" as a user name and the default password is "blackarch".</p>
+							<p><img src="BlackArch_Linux-Log_in-UI_20200111.png"  > <br /></p>
+							<p>Step 12 :"Congratulations" You cmpleted the boot part and loged in as a root user successfully.</p>
+							<p><img src="12.png"  > <br /></p>
+							
+							
+					</section><!--//section--> 
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Install(Same on both USB boot and Virtual Machine)</h2>
+						<p>I hope you already boot your device and you are ready for installation.In this part i will show you how to install Black Arch ofline.</p>
+						<h3>Follow the Steps below - </h3><br />
+						<p>Step 1:Right click on the screen and Open the terminal.Then type this Command " blackarch-install " and press Enter.</p>
+						<p><img src="13.png"  > <br /></p>
+						<p>Step 2:The Blackarch installer will be start from now.Now you have to select installation mood .Here i will show you Offline installation of LIve-ISO.Choose number 2  and press enter.</p>
+						<p><img src="15.png"  > <br /></p>
+						<p>Step 3:Now you have to choose the ouput mood .Here is two type of output mood.I selected the Verbose mood.</p>
+						<p><img src="16.png"  > <br /></p>
+						<p>Step 4:You have to set a local .If you want to see the local list select 2 and for set a local select 1</p>
+						<p><img src="17.png"  > <br /></p>
+						<p>Step 5:I will left this part as default.If you want you can set others local by seeing the list. Press Enter.</p>
+						<p><img src="18.png"  > <br /></p>
+						<p>Step 6:Now you have to select your Keymap(Keyboard Layout).Choose number 1 and press enter.Here i will keep the keymap default .If you want you can choose other keymaps by seeing the list .</p>
+						<p><img src="19.png"  > <br /></p>
+						<p><img src="20.png"  > <br /></p>
+						<p>Step 7:Set your hostname .You can set whatever you want. </p>
+						<p><img src="21.png"  > <br /></p>
+						<p>Step 8:Here you have choose your hard disk where you want to install your Blackarch.If you do dual boot here will be many disk available.But for virtual machine one disk will be available.Type "sda" and hit enter .After that tere wiil be option for dual boot setup .If you are doing single boot and vmware installation then type "n" and press enter .  </p>
+						<p><img src="22.png"  > <br /></p>						
+						<p><img src="23.png"  > <br /></p>	
+							<p>Step 9:Creat partition is important here .Type "y" here and press enter .
+							After that there will be option for in-memory zeroed partition, type yes again.Select dos as a label type. </p>
+							<p><img src="24.png"  > <br /></p>							
+							<p><img src="25.png"  > <br /></p>								
+							<p><img src="26.png"  > <br /></p>
+							
+							<p>Step 10:The partition manager will be open .Here you need to creat boot,root and swap parttion .Its very easy creat partition .For boot partition we don't need much space.So press on [ New ] to create partition and give 256M for boot space and set as Primary partition.Create bootflag on this partition by press [ Bootable ] . </p>
+							<p><img src="28.png"  > <br /></p>
+							<p><img src="29.png"  > <br /></p>
+							<p><img src="30.png"  > <br /></p>
+							<p>Step 11:After that you need to create swap partition.Set 2G for the swap partition and set as primary partition as well.Set the type Linux swap / Solaris. Its optional to create swap partition but it will increase the performance.If  you don't want to create, its totally fine.Those who have less RAM, it will help them a lot.   </p>							
+							<p><img src="31.png"  > <br /></p>
+							<p><img src="32.png"  > <br /></p>
+							<p><img src="33.png"  > <br /></p>							
+							<p>Step 12:Set root partition now .How much storage you left set them all as a root partition.Also set this partition as a primary .After that select [ Write ] to set patition label and enter yes.Then [ Quit ] the partition manager.   </p>						
+							<p><img src="34.png"  > <br /></p>
+							<p><img src="35.png"  > <br /></p>
+							<p><img src="36.png"  > <br /></p>
+							<p>Step 13:Set no for encryptep root. </p>
+							<p><img src="37.png"  > <br /></p>
+							<p>Step 14:Now you have to tell the installer which partition you will use for boot,swap and root.First set the boot partition by typing /dev/sda1 and set ext4 as its filesystem.After that set  root partition by typing /dev/sda3 and ext4 for filesystem .Then lastly set swap partition by typing /dev/sda2 .After that hit enter and give permission for formatting partition. It will be automatically dump data from Live-ISO.This process will take so much time .You can grab some snacks and coffe for pass the time. </p>
+							<p><img src="38.png"  > <br /></p>
+							<p><img src="39.png"  > <br /></p>
+							<p><img src="40.png"  > <br /></p>
+							<p><img src="41.png"  > <br /></p>
+							<p>Step 15:Set new password for root.You can also set a normal user account if you want type y.Then set your time-zone as default cause you can change it later.</p>
+							<p><img src="42.png"  > <br /></p>
+							<p><img src="44.png"  > <br /></p>
+								<p>Step 16:Reboot the system by tyoing reboot.Thats all.</p>
+							<p><img src="45.png"  > <br /></p>
+							<p><h4>Congratulations you install the Blackarch successfully</h4>
+							<img src="blackarch.png"   width="980"  height="670" />
+							</p>
+							
+							
+						
+						
+						
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Basic Commands</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Learn Basic Commands</h2>
+						<p>
+						
+						
+						<embed src="arch_cheatsheet.txt" width="650"  height="500"></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">BlackArch Commands</h2>
+						
+						
+						<p>Here i am going to show you a few essential things to do after installing Arch Linux. This will help you get started with Arch Linux so that you can explore it further. 
+						Arch Linux is sort of expert domain and i believe if you use Arch, you are not afraid of using the terminal. This is why the steps mentioned here are command line based.</p>
+						<h4>1.Update your system</h4>
+						<p>I hope you already using the latest release, but it’s always advisable to check for the latest update for your Arch System:</p>
+						<pre><code>sudo pacman -Syu</code></pre>
+						<h4>2.Installing X server</h4>
+						<p>Before installing a desktop environment (DE), you will need to install the X server which is the most popular display server.</p>
+						<pre><code>sudo pacman -S xorg</code></pre>
+						<p><b>Once it’s completed, use any of the below commands to install your favorite desktop environment.</b></p>
+						<ul>Install GNOME:
+						<pre class="wp-block-code"><code>sudo pacman -S gnome gnome-extra</code></pre>
+						<p>To install Cinnamon:</p>
+						<pre><code>sudo pacman -S cinnamon nemo-fileroller</code></pre>
+						<p>To install XFCE:</p>
+						<pre><code>sudo pacman -S xfce4 xfce4-goodies</code></pre>
+						<p>To install KDE:</p>
+						<pre><code>sudo pacman -S plasma</code></pre>
+						<p>To install MATE:</p>
+						<pre><code>sudo pacman -S mate mate-extra</code></pre>
+						<p>You will also need a display manager to log in to your desktop environment. For the ease, you can install LXDM.</p>
+						<pre><code>pacman -S lxdm</code></pre>
+						<p>Once installed, you can enable to start each time you reboot your system.</p>
+						<pre><code>systemctl enable lxdm.service</code></pre>
+						<p>Reboot your system and you will see the LXDM&nbsp;login screen, select your desktop environment from the list and login.</p><br />
+						<h4>3. Install an LTS kernel</h4>
+						<p>Why should you install LTS kernel in Arch Linux when it is supposed to be cutting edge?</p>
+						<p>Installing an LTS kernel means you have a more stable kernel with better support to older hardware. Also, the LTS kernels are supported for at least 2 years with bug fixes and performance enhancements.</p>
+						<p>If you rather choose to use the latest Linux kernel, you may find regression and bugs introduced by the latest kernel updates to your existing software and system. It&#8217;s not a certainty but it is definitely a possibility.&nbsp;For example, a  Kernel update broke GNOME in Arch based Linux some time&nbsp;back.</p>
+						<p>This is why it is advisable to use an LTS kernel if you prefer a more stable system and/or have an older one. But the decision is yours to make.</p>
+						<p>Before you install an LTS kernel, check the Linux kernel version you are using.</p>
+						
+						<pre><code>uname -r</code></pre>
+                       <p>To install the LTS kernel and Linux LTS headers, type the below command:</p>
+					   <pre><code>sudo pacman -S linux-lts</code></pre>
+						<pre><code>sudo pacman -S linux-lts-headers</code></pre>
+						<p>At this point, the LTS version is the default one.</p>
+						<p>Once done, you can remove the older kernels by typing the below command. However, I prefer to keep it in “case” something goes wrong, I can boot into the other Linux kernel version.</p>
+					     <pre><code>sudo pacman -Rs linux</code></pre>
+					    <h4>4.Installing Yaourt</h4>
+						<p>Yaourt stands for Yet AnOther User Repository Tool which can be used to search, download and install packages from the official repository as well as AUR.
+
+							Arch User Repository or AUR is a community-driven repository for Arch users and contains package descriptions to compile a package from source and install it. Most of the packages that make to the official repository start in the AUR first. Users contribute their own applications which are voted for or against and once it becomes popular enough, they are included in the official repository.
+							AUR contains lots of useful applications that are not found in the main repo can be installed from AUR with help of Yaourt. Yaourt is similar to what Synaptic Package Manager does, and can be installed by following these steps:</p>
+					   
+					<pre><code>[archlinuxfr] 
+ SigLevel = Never
+ Server = http://repo.archlinux.fr/$arch</code></pre>
+                      <p>Save the change. Install Yaourt with the below command</p>
+					   <pre><code>sudo pacman -Syu yaourt</code></pre>
+					   <p>Use the command below to sync Yaourt with AUR:</p>
+					    <pre><code>yaourt -Syy</code></pre>
+						<p>To install AUR packages, you can the below commands :</p>
+						<pre><code>yaourt -S package-name</code></pre>
+					  <h4>5. Install GUI Package Manager Pamac</h4>
+					  <p>The default package manager for Arch Linux is Pacman (Package Manager) and using Pacman is quite easy to install or remove a software.
+
+However, it’s sometimes difficult to talk in commands. Pamac provides a GUI option for Pacman and works like Synaptic Package Manager or GNOME Software.
+
+Pamac serves as a GUI tool for installing or updating packages and works well with Arch User Repository AUR.</p>
+						
+					<p>Before you can use Pamac, you will need to have Yaourt (or Packer) installed first. Once done, type the below command in terminal to install Pamac.</p>
+					<pre><code>yaourt -S pamac-aur</code></pre>
+					<p>You can launch the GUI by searching for Add/Remove Software. It will show different packages that are available and installed and which all updates are needed.</p>
+					<p>However, by default, the AUR packages are not enabled. To enable it, click on the options just beside the search option) and choose Preferences. Under the AUR tab, Enable AUR support.</p>
+					<h4>6. Installing Codecs and plugins</h4>
+					<p>Of course, you are going to use your personal system for recreational works like watching videos and listening to your favorite song. But before that, you will have to install codecs for these audio and video files.</p>
+					<p>Type the below command in the terminal:</p>
+					<pre><code>sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins</code></pre>
+					<p>However, installing a media player like VLC imports all the necessary codecs and installs it.</p>
+					<pre><code></code>sudo pacman -S vlc</pre>
+					<p>You may add a music player too:</p>
+						<pre><code>sudo pacman -S amarok</code></pre>
+						<h4>7.Installing productive software</h4>
+						<p>For day to day use and setting up your Arch system for productive use, you need some basic applications like an office suite, email client, a web browser etc.</p>
+						<pre><code>sudo pacman -S libreoffice thunderbird firefox 
+gedit flashplugin skype dropbox aria2</code></pre>
+ 					<p>Aria2 is a download manager, LibreOffice is the most popular open source office suite, Thunderbird is a cross-platform mail and chat client, Firefox is an open source and free web browser, Gedit is an editor, flashplugin installs flash, Skype is a popular messaging and video calling software and Dropbox – to store your file for anytime access.</p>
+					<p>Along with these, you will need archive managers</p>
+					<pre><code>sudo pacman -S p7zip p7zip-plugins unrar tar rsync</code></pre>
+					<p>This is of course just a suggestion. You can install essential Linux applications of your choice and your requirement.</p>
+					<h4>8.Customizing the looks of your Arch Linux desktop</h4>
+					<p>You can customize your Arch Linux by installing some nice flat themes or the conky monitoring tool.</p>
+					<p><b>Installing themes</b></p>
+					<p>Some of the most liked themes are Arc GTK, flatplat, Vertex and Numix, which can be installed by below command:</p>
+					<pre><code>yaourt -S arc-gtk-theme flatplat-theme-git vertex-themes
+sudo pacman -S numix-themes</code></pre>
+					<p>Go to settings > Appearance and change the default theme from there.</p>
+					<p><b>Installing Conky</b></p>
+					<p>Conky is a free system manager application which can monitor and display memory usage, CPU statistics, disk storage, swap, CPU temperature and more.
+
+To install conky, use below command :</p>
+					<pre><code>sudo pacman -S conky</code></pre>
+					<p>You can configure conky yourself which will need some digging into the ~/.conkyrc file or you can download your favorite one from web and replace the default conkyrc file. There is a detailed tutorial about conky and its configuration on the Arch Linux website.</p>
+					<h4>Rmove any Package </h4>
+					<p>At any point in time, if you feel like removing any application (and its dependencies), you can use these commands:</p>
+					<pre><code>sudo pacman -R package-name</code></pre>
+					<p>It removes the package without removing the dependencies. If you want to remove the dependencies but leaving out the ones which are being used by some other application, below command will help:</p>
+						<pre><code>sudo pacman -Rs package-name</code></pre>
+					
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Section Item 3.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Top Used Tools</h1>
+					    <section class="docs-intro">
+						    <p>​Blackarch allows you to install tools individually or in groups with the modular package feature. To list all of the available tools, run – pacman -Sgg | grep blackarch | cut -d’ ’ -f2 | sort -u To see the blackarch categories, run – pacman -Sg | grep blackarch Some of the available groups include
+To install a category of tools, run – pacman -S blackarch -< category >  </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Common Blackarch Tools</h2>
+						<p>Blackarch-anti-forensic – Packages that are used for countering forensic activities, including encryption, steganography, and anything that modifies files/file attributes.<br/>
+
+Blackarch-automation – Packages that are used for tool or workflow automation.<br/>
+Blackarch-decompiler –  Packages that attempt to reverse a compiled program into the source code.<br/>
+Blackarch-defensive – Packages that are used to protect a user from malware and attacks from other users.<br/>
+Blackarch-dos – Packages that use DoS (Denial of Service) attacks.<br/>
+Blackarch-mobile – Packages that manipulate mobile platforms.<br/>
+Blackarch-networking – Package that involves IP networking.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Troubleshooting</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Section Item 5.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Section Item 5.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">Section Item 5.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Developements</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Section Item 6.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Section Item 6.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">Section Item 6.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Top Uses</h1>
+					    <section class="docs-intro">
+						    <p>​BlackArch is a penetration testing distro that Arch lovers will love. It allows you the freedom to setup your workstation just the way you would want.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Section Item 7.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Section Item 7.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-3">
+							<h2 class="section-heading">Section Item 7.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+	
+				
+				
+				
+				  
+			    <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Resources</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Section Item 9.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Section Item 9.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-3">
+							<h2 class="section-heading">Section Item 9.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+				
+				
+				
+				
+			    
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Is BlackArch Linux the right pentesting distribution for me?</h5>
+						<p>BlackArch is a Linux pentesting distribution based on ArchLinux. If you're not familiar with ArchLinux, or Linux in general, we strongly suggest you avoid BlackArch due to the learning curve for new users.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where do I start with BlackArch?</h5>
+						<p>You must first get an ISO on the downloads page and install it by following the instructions of the installation script. You can find our tutorial to look the process step by step at Blackarch installation part. If you encounter any problems and need help, the best place to ask is there IRC channel. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Is BlackArch up to date?</h5>
+						<p>BlackArch is constantly being updated and offers the latest packages available on Github. We release a new ISO four times a year (quarterly). These new images contain packages that are up to date, and usually include bug fixes. If you find any package that is outdated and wish to see it up to date, please report it as an issue on our Github repository Github.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How can I fetch/install the latest update available?</h5>
+						<p>By simply running pacman -Syu --needed --overwrite='*' blackarch. This command requires root privileges. </p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Why do I get invalid keyring signature?</h5>
+						<p>It could happen for a wide range of reasons. Below you will find a few suggestions.
+<ul>
+<li>You don't have an internet connection (as you can imagine, a rare problem and can be verified quickly).</li>
+<li>You may have a DNS problem, that can't resolve pgp.mit.edu accordingly. Please check your DNS settings (pgp.mit.edu works best with 8.8.8.8 DNS Server).</li>
+<li>You may have a network issue, different from the above one, which is hard for us to help since it can be a myriad of things. For example: DNS caching.</li>
+<li>You may have a clock/time issue.</li>
+<li>You may have something blocking your communication with mit.edu server, for instance: a firewall.</li>
+<li>If you're connected through a VPN, try to temporarily disable it and run strap.sh again.</li>
+After testing all the items described above if you still have problems using strap.sh, try the options below:</ul><br />
+
+		<h4>1st option:</h4>
+		<p># rm -rf /etc/pacman.d/gnupg</p>
+		<p># pacman-key --init</p>
+		<p># pacman-key --populate archlinux blackarch</p>
+		<p># pacman-key --update --keyserver keyserver.ubuntu.com</p>
+
+		<h4>2nd option:</h4>
+		<p>You could try to change to pgp.mit.edu's IP address using the following command:</p>
+		<p># curl -O https://blackarch.org/strap.sh</p>
+		<p># chmod +x strap.sh</p>
+		<p># sha1sum strap.sh: it should match with the information on downloads</p>
+		<p># sh strap.sh</p>
+
+		It's very important to follow the suggestions above as well as checking the Archlinux Wiki pages to assist you as needed. If you still encounter any problems, pay us a visit at #blackarch.
+</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where can I get help for a problem that I'm facing?</h5>
+						<p>Depending on the problem you're facing, you can visit our Github and submit an issue on our Issue page, such as:
+       <ul><li>BlackArch Site repository: related to our website. For example: If a link is broken or an image isn't loading.</li>
+        <li>BlackArch repository: related to our packages. For example: a package hasn't been updated for a while or failed to run.</li>
+       <li>BlackArch Installer repository: related to our installer. For example: the installation failed or you can not boot after a successful installation.
+        You can also take some time to browse our other repositories.</li></ul>
+		If you still cannot find a solution to your problem, visit our IRC channel and ask for help. But please be advised, BlackArch users are in different parts of the globe (different time zones). Therefore, be patient. Ask your question and wait for a reply.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>I would like to help. What can I do?</h5>
+						<p>You Can registered into our contribution panel . </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where arcu sed urna gravida?</h5>
+						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-3">
+							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+						    <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
+							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
+							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
+							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://naemazam.github.io" target="_blank">Naem Azam</a> for developers</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
